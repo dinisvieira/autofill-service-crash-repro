@@ -1,4 +1,4 @@
-## Sample App for reproducing crash when trying to open the app from an "Autofill context".
+## Sample Android MAUI App for reproducing crash when trying to open the app from an "Autofill context".
 
 ### Steps to Crash:
 - Run app
@@ -13,5 +13,7 @@
 - Comment "MainPage = new NavigationPage(new MainPage());"
 - Uncomment "MainPage = new AppShell();"
 
-
-**Note: Same crash can also happen on MainActivity. For testing that just change the intent in AutofillService.cs to be MainActivity instead of AutofillExternalSelectionActivity**
+### Notes:
+- Same crash can also happen on MainActivity. For testing that just change the intent in AutofillService.cs to be MainActivity instead of AutofillExternalSelectionActivity
+- Crashes with both MAUI .Net 8 RC1 and RC2
+- Running on Visual Studio 2022 Preview (17.8.0 Preview 4)
