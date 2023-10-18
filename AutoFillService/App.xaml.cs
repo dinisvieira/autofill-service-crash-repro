@@ -11,6 +11,17 @@
 
             // This one and other non-shell TabbedPage/NavigationPage/Page combinations all crash
             MainPage = new NavigationPage(new MainPage());
+
+            //Also crashes
+            //MainPage = new MainPage(); //Also crashes
+
+            //Also crashes
+            /*
+            MainPage = new TabbedPage()
+            {
+                Children = { new NavigationPage(new MainPage()) }
+            };
+            */
         }
     }
 }
