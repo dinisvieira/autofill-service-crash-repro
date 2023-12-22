@@ -12,6 +12,7 @@ namespace AutoFillService.Droid.Autofill
     {
         protected override void OnCreate(Bundle bundle)
         {
+            var isExternalAutofill = Intent.GetBooleanExtra("external-autofill", false);
             base.OnCreate(bundle);
 
             System.Diagnostics.Debug.WriteLine("AutofillExternalSelectionActivity Created!");

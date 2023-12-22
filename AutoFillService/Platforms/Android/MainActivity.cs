@@ -9,7 +9,7 @@ namespace AutoFillService
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
-
+            var isAutofill = Intent.GetBooleanExtra("autofill", false);
             base.OnCreate(savedInstanceState); 
             System.Diagnostics.Debug.WriteLine("MainActivity Created!");
         }
